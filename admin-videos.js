@@ -1,5 +1,5 @@
 import {createClient} from 'https://esm.sh/@supabase/supabase-js@2.49.10';
-import * as tus from 'https://esm.sh/tus-js-client@4.3.1';
+import * as tus from 'https://cdn.jsdelivr.net/npm/tus-js-client@4.3.1/+esm';
 const db=createClient('https://lydznydmkcwqtxukktyy.supabase.co','sb_publishable_jJ98f2Xpok2CrjJ4KfRFmA_ahQaWfAv');
 const bucket='antonio-freitas-videos', $=id=>document.getElementById(id), msg=t=>$('video-progress').textContent=t;
 const publicUrl=path=>db.storage.from(bucket).getPublicUrl(path).data.publicUrl;
